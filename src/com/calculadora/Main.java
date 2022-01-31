@@ -6,6 +6,7 @@ public class Main {
 	// write your code here
         System.out.println("Calculator");
         PostfixCalculator calculator = new PostfixCalculator();
+        // TODO: Usar un menu e ingresar los contenidos del archivo de texto en el metodo calculate.
         System.out.println(calculator.calculate("1 2 + 4 * 3 +"));
     }
 }
