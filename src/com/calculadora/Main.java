@@ -7,7 +7,7 @@ public class Main {
         System.out.println("Calculator");
         PostfixCalculator calculator = new PostfixCalculator();
         Scanner sc = new Scanner(System.in);
-        vista v = new vista();
+        Vista v = new Vista();
         v.saludo();
         int ot = 0;
         while (ot != 2) {

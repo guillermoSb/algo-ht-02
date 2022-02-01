@@ -1,6 +1,6 @@
 package com.calculadora;
 
-public class vista {
+public class Vista {
     public void saludo() {
         System.out.println("Hola y bienvenido a la calculadora");
         try {
