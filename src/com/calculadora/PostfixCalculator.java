@@ -38,9 +38,9 @@ public class PostfixCalculator implements Stack<Double>, Calculator{
 
     @Override
     public double calculate(String operation) {
-        // Split the operation into sub components
+        // Split the operation into subcomponents
         String[] splittedOperation = operation.split(" ");
-        // Itterate through each value on the operation
+        // Iterate through each value on the operation
         for (String value:
              splittedOperation) {
             // TODO: Handle error
@@ -80,6 +80,12 @@ public class PostfixCalculator implements Stack<Double>, Calculator{
         return 0;   // Last instance
     }
 
+
+    /**
+     * Check if a string is a number or not
+     * @param value
+     * @return
+     */
     private boolean isNumber(String value) {
         try {
             Double number = Double.parseDouble(value);
@@ -89,6 +95,11 @@ public class PostfixCalculator implements Stack<Double>, Calculator{
         }
     }
 
+    /**
+     * Check if a string is an operator or not
+     * @param value
+     * @return
+     */
     private boolean isOperator(String value) {
         if (value.equals("+") || value.equals("-") || value.equals("*") || value.equals("/")) {
             return true;
