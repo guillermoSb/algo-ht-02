@@ -43,7 +43,6 @@ public class PostfixCalculator implements Stack<Double>, Calculator{
         // Iterate through each value on the operation
         for (String value:
              splittedOperation) {
-            // TODO: Handle error
             if (!isNumber(value) && !isOperator(value)) {
                 return 0;
             }
@@ -54,7 +53,6 @@ public class PostfixCalculator implements Stack<Double>, Calculator{
             }
             // If the value is an operator, start operating two values
             if(isOperator(value)) {
-                // Todo: Handle Exception
                 Double operatorA = remove();
                 Double operatorB = remove();
                 String operator = value;
